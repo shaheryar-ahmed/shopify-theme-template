@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{{ shop.name }}</title>
+
+    <!-- Link your CSS files from your theme's assets -->
+    <link rel="stylesheet" href="{{ 'style.css' | asset_url }}" type="text/css" media="all">
+
+    <!-- Link your JS files from your theme's assets -->
+    <script src="{{ 'app.js' | asset_url }}" defer></script>
+    {{ content_for_header }}
+  </head>
+  <body>
+    {% render 'header' %}
+    {{ content_for_layout }}
+    {% render 'footer' %}
+  </body>
+</html>

@@ -1,0 +1,4 @@
+development:
+  password: Admin API integration
+  theme_id: "theme_id"
+  store: storename.myshopify.com
